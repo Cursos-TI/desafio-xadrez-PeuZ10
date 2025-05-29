@@ -1,32 +1,25 @@
 #include <stdio.h>
+int main () {
+int i2 = 0;
+int i3 = 0;
+   for (int i1 = 0; i1 < 5; i1++) //Aqui usamos o for para mover a Torre cinco casas para direita no tabuleiro
+   {
+     printf("Torre se noveu para (Direita)\n"); 
+   }
+   
 
-// Desafio de Xadrez - MateCheck
-// Este código inicial serve como base para o desenvolvimento do sistema de movimentação das peças de xadrez.
-// O objetivo é utilizar estruturas de repetição e funções para determinar os limites de movimentação dentro do jogo.
-
-int main() {
-    // Nível Novato - Movimentação das Peças
-    // Sugestão: Declare variáveis constantes para representar o número de casas que cada peça pode se mover.
-
-    // Implementação de Movimentação do Bispo
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação do Bispo em diagonal.
-
-    // Implementação de Movimentação da Torre
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Torre para a direita.
-
-    // Implementação de Movimentação da Rainha
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Rainha para a esquerda.
-
-    // Nível Aventureiro - Movimentação do Cavalo
-    // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
-    // Um loop pode representar a movimentação horizontal e outro vertical.
-
-    // Nível Mestre - Funções Recursivas e Loops Aninhados
-    // Sugestão: Substitua as movimentações das peças por funções recursivas.
-    // Exemplo: Crie uma função recursiva para o movimento do Bispo.
-
-    // Sugestão: Implemente a movimentação do Cavalo utilizando loops com variáveis múltiplas e condições avançadas.
-    // Inclua o uso de continue e break dentro dos loops.
-
-    return 0;
+   do{ //Aqui usamos o do while para mover a o Bispo cinco casas para cima direita (diagonal) no tabuleiro
+   printf("Bispo se moveu para (Cima direita)\n");
+   i2++;
+   } while (i2 < 5);
+   
+    
+   
+   while (i3 < 8) //Aqui usamos o while para mover a Rainha oito casas para esquerda no tabuleiro
+   {
+    printf("Rainha se moveu para (Esquerda)\n");
+    i3++;
+   }
+   
+return 0;
 }
